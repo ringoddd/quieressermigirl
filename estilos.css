@@ -1,0 +1,115 @@
+body {
+  background-color: #ebcff0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Usamos min-height para que el body crezca si el contenido lo necesita */
+  position: relative;
+}
+
+.wrapper {
+  width: 100%; /* El wrapper ocupa todo el ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  position: relative;
+  text-align: center;
+  background-color: #da9be6;
+  padding: 40px; /* Reducimos el padding para pantallas más pequeñas */
+  border-radius: 15px; /* Reducimos un poco el radio del borde */
+  box-shadow: 0 5px 15px rgba(175, 38, 38, 0.1); /* Reducimos la sombra */
+  width: 90%; /* El contenedor ocupa la mayoría del ancho */
+  max-width: 400px; /* Limitamos el ancho máximo en pantallas grandes */
+  height: auto; /* La altura se ajusta al contenido */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em; /* Reducimos el tamaño del título */
+  color: #6a1b9a;
+  margin-bottom: 20px; /* Reducimos el margen inferior */
+  z-index: 1;
+  position: relative;
+}
+
+.imagenes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenes img {
+  position: absolute;
+  width: 60px; /* Reducimos el tamaño de las imágenes de decoración */
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px; /* Reducimos el radio del borde */
+  border: 2px solid #5e3366; /* Reducimos el ancho del borde */
+  transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05); /* Reducimos un poco el efecto hover */
+}
+
+/* Posiciones individuales ajustadas para pantallas más pequeñas */
+.img1 { top: 5%; left: 2%; }
+.img2 { top: 70%; left: 5%; }
+.img3 { top: 5%; right: 2%; }
+.img4 { bottom: 5%; right: 5%; }
+.img5 { top: 20%; left: 25%; }
+.img6 { top: 10%; right: 25%; }
+.img7 { bottom: 5%; left: 30%; }
+.img8 { top: 40%; right: 0%; }
+.img9 { bottom: 10%; left: 55%; }
+
+.heart {
+  position: absolute;
+  width: 40px; /* Reducimos el tamaño de los corazones */
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Posiciones individuales de los corazones ajustadas para móviles */
+.heart1 {
+  top: -20px; /* Un poco más cerca del borde superior */
+  left: 50%;
+  transform: translateX(-50%) rotate(15deg);
+}
+.heart2 {
+  top: 5px;
+  left: 5px;
+  transform: rotate(-25deg);
+}
+.heart3 {
+  top: 20%;
+  right: 5px;
+  transform: rotate(40deg);
+}
+.heart4 {
+  bottom: 5px;
+  right: 10%;
+  transform: rotate(-10deg);
+}
+.heart5 {
+  top: 60%;
+  left: 80%;
+  transform: rotate(30deg);
+}
+
+.heart:hover {
+  transform: scale(1.1) rotate(0deg); /* Reducimos un poco el efecto hover */
+}
